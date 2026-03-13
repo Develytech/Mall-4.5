@@ -1,0 +1,161 @@
+export const siteConfig = {
+  language: {
+    content: "sv-SE",
+    codeComments: "en",
+  },
+  company: {
+    name: "Ljus & Kraft Stockholm AB",
+    domain: "",
+    location: "Stockholm med kranskommuner",
+    tagline: "Elinstallationer med precision och känsla för detaljer",
+    description:
+      "Ljus & Kraft Stockholm utför elinstallationer för privatpersoner och företag i Stockholm. Företaget levererar säkra, genomtänkta och hållbara lösningar.",
+  },
+  contact: {
+    email: "oscar@lksgroup.se",
+    phone: "+46 73 655 41 98",
+  },
+  branding: {
+    accentColor: "#1f2933",
+    backgroundColor: "#f8fafc",
+    textColor: "#111827",
+    footerBackground: "#1f2933",
+    footerTextColor: "#ffffff",
+    logoPath: "/assets/brand/logo.png",
+    fontFamily: "system",
+  },
+  layout: {
+    containerMaxWidthPx: 1360,
+    wideContainerMaxWidthPx: 1760,
+    fullBleedMaxWidthPx: 9999,
+    containerFluidVw: 92,
+    wideContainerFluidVw: 98,
+    narrowContainerMaxWidthPx: 1120,
+    narrowContainerFluidVw: 92,
+    sectionPaddingYMobilePx: 72,
+    sectionPaddingYDesktopPx: 104,
+    borderRadiusPx: 8,
+    shadowStyle: "soft",
+    headerHeightPx: 72,
+    gutterTight: "clamp(18px, 2vw, 44px)",
+    gutterStandard: "clamp(26px, 3vw, 80px)",
+    gutterWide: "clamp(34px, 4vw, 120px)",
+  },
+  layoutUsage: {
+    header: { width: "wide", gutter: "tight" },
+    hero: { width: "standard", gutter: "wide" },
+    about: { width: "standard", gutter: "standard" },
+    services: { width: "standard", gutter: "standard" },
+    gallery: { width: "wide", gutter: "tight" },
+    contact: { width: "wide", gutter: "standard" },
+    footer: { width: "wide", gutter: "tight" },
+  },
+  motion: {
+    preset: "fade-up",
+    durationMs: 520,
+    staggerMs: 90,
+  },
+  hero: {
+    imagePath: "/assets/brand/hero.jpg",
+    badge: "ELINSTALLATION • LJUSDESIGN • STYRSYSTEM • PROJEKTERING",
+    headline: "Elinstallationer med precision och känsla för detaljer.",
+    subtext: "För privatpersoner och företag i Stockholm.",
+    description: [
+      "Vi levererar säkra, genomtänkta och hållbara lösningar.",
+      "Ert installationsföretag med det lilla extra.",
+    ],
+    secondaryAction: {
+      label: "Kontakta oss",
+      target: "contact",
+    },
+  },
+  navigation: [
+    { label: "Om oss", target: "about" },
+    { label: "Tjänster", target: "services" },
+    { label: "Bildgalleri", target: "gallery" },
+    { label: "Kontakta oss", target: "contact" },
+  ],
+  about: {
+    eyebrow: "OM OSS – ELEKTRIKER I STOCKHOLM",
+    headline: "En trygg elpartner i Stockholm",
+    paragraphs: [
+      "Vi hjälper privatpersoner, BRF:er och företag i Stockholm med allt från servicejobb till större installationer. Du får tydlig dialog, väl utfört arbete och lösningar som håller över tid, oavsett uppdragets storlek.",
+      "Vi arbetar tryggt i både äldre fastigheter och nyproduktion. Med noggrann planering, säker installation och tydlig dokumentation skapar vi ett slutresultat som fungerar i vardagen och ser professionellt ut.",
+      "Snabb återkoppling och transparent prissättning är en självklarhet. Du får en tydlig offert, en ansvarig kontaktperson och uppföljning från start till färdig leverans.",
+    ],
+    bullets: [
+      "Auktoriserade & certifierade elektriker",
+      "Tydlig offert – inga överraskningar",
+      "Återkoppling inom 24h",
+    ],
+    cta: {
+      label: "Kontakta oss",
+      target: "contact",
+    },
+    image: {
+      src: "/assets/about/about.jpg",
+      alt: "Elektriker som installerar utrustning",
+    },
+    overlay: {
+      label: "STOCKHOLM",
+      text: "Elinstallation • Service • Projektering",
+    },
+  },
+  services: {
+    sectionTitle: "Tjänster",
+    sectionText:
+      "Elinstallationer och tekniska lösningar med fokus på kvalitet, säkerhet och långsiktig funktion.",
+    presentation: "textual",
+  },
+  gallery: {
+    sectionTitle: "Bildgalleri",
+    sectionText: "Ett urval av bilder från våra installationer och arbeten.",
+    behavior: {
+      aspectRatio: "9/16",
+      desktopColumns: 3,
+      gapPx: 22,
+      edgePaddingPx: 22,
+      imageFit: "cover",
+      hideScrollbarOnMobile: true,
+    },
+  },
+  contactSection: {
+    sectionTitle: "Kontakt",
+    sectionText: "Hör av dig med frågor eller underlag, så återkommer vi.",
+    contactText: "Ljus & Kraft Stockholm utför alla typer av elinstallationer.",
+    infoLabels: {
+      phone: "Telefon",
+      email: "E-post",
+      location: "Område",
+      support: "Om uppdrag",
+    },
+    form: {
+      enabled: true,
+      submitBehavior: "api",
+      endpoint: "/api/contact",
+      method: "POST",
+      contentType: "application/json",
+      fields: {
+        nameLabel: "Namn",
+        emailLabel: "E-post",
+        phoneLabel: "Telefon",
+        messageLabel: "Meddelande",
+        namePlaceholder: "Ditt namn",
+        emailPlaceholder: "din@mail.se",
+        phonePlaceholder: "Valfritt",
+        messagePlaceholder: "Beskriv kort vad du behöver hjälp med...",
+        submitText: "Skicka",
+      },
+      successMessage: "Tack! Vi återkommer så snart vi kan.",
+      errorMessage:
+        "Något gick fel. Försök igen eller kontakta oss via telefon/e-post.",
+    },
+  },
+  footer: {
+    description:
+      "Elinstallationer för privatpersoner och företag i Stockholm med kranskommuner.",
+    navigationTitle: "Snabblänkar",
+    contactTitle: "Kontakt",
+    textTemplate: "© {YEAR} {COMPANY}. Alla rättigheter förbehållna.",
+  },
+};
